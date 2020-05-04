@@ -8,6 +8,13 @@ class AccueilController < ApplicationController
     #@gossips = Gossip.all
     #@user = User.find(params[:id])
   end
+
+  def gossip
+    @gossip = Gossip.find(params[:id])
+  end
+  def user
+    @user = User.find(params[:id])
+  end
   #def gossip
    # @gossip = Gossip.find(params[:id])
   #end

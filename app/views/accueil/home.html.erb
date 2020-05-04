@@ -5,13 +5,17 @@
     <p>Voici la liste des Potins</p>
 
     <%= @gossips.each do |gossip| %>
+    <div class="row justify-content-center">
+      <div class="col-6">
     <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src=".../100px180/" alt="Card image cap">
+  <img class="card-img-top" src="https://actu.meilleurmobile.com/wp-content/uploads/2015/06/gossip-application.jpg" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Potin n° <%= gossip.id %> de <%= gossip.title%></h5>
     <p class="card-text"><%= gossip.content[0..50]%>...</p>
     <a href="gossip_path(gossip.id)" class="btn btn-primary">Voir le potin</a>
   </div>
+</div>
+</div>
 </div>
 
 <% end %> 
