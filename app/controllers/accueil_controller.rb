@@ -3,6 +3,8 @@ class AccueilController < ApplicationController
     @first_name = params[:first_name]
     
     @gossips = Gossip.all
+
+    #@gossip = Gossip.find(params[:id])
     
     #@gossip = Gossip.find(params[:id])
     #@gossips = Gossip.all

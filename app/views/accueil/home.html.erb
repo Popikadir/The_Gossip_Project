@@ -12,6 +12,7 @@
         <h5 class="card-title text-info">Gossip n° <%= gossip.id %></h5>
         <h5 class="card-title text-secondary"> Title : <%= gossip.title%></h5>
         <p class="card-text"> Author: <%= gossip.user.first_name %> </p>
+        <a href="<%=show_path(gossip.id)%>" class="btn btn-primary">Voir le potin</a>
       </div>
     </div>
   </div>
